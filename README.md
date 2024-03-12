@@ -13,7 +13,7 @@ This is the PyTorch implementation of the paper “ViComp: Video Compensation fo
     
 ## Datasets
 The datasets used in the paper are collected from two blender open source films --"Big Buck Bunny" and "Spring".
-The shots are detected by [TransNet V2: Shot Boundary Detection Neural Network](https://github.com/soCzech/TransNetV2)
+The shots are detected by [TransNet V2: Shot Boundary Detection Neural Network](https://github.com/soCzech/TransNetV2).
 The image named "textImg.png" is downloaded from [this website](http://www.lybczcw.com/News_read_id_397.shtml) for displacement estimation, you can replace it with any texture-rich image.  
 
 ## Usage
