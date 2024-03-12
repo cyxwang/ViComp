@@ -1,0 +1,42 @@
+
+MODEL:
+  LONG: casst # 
+  SHORT: finetune
+  PCMODELNAME: ff2compennest 
+  GCMODELNAME: flowformer
+  ARCH: Online 
+  PCMODEL_DIR: ../../pretrain/blender_pretrained_CompenNeSt_l1+ssim_50000_32_20000_0.0015_0.8_2000_0.0001_20000.pth
+  GCMODEL_DIR :  ../../pretrain/gma-sintel.pth
+
+  UNCMP: False
+  SUPDATE: True
+
+  
+TEST:
+  BATCH_SIZE: 1
+  IsDraw: True
+CORRUPTION:
+  DATA_DIR: ../../data/ 
+  DATA_NAME: 
+  - spring1024
+  NUM:  11040 
+  START: 0 
+  SURFACE:  save_fold
+
+OPTIM_FINETUNE:
+  LOSS: l1+l2+ssim
+  DEVICE:  cuda
+  METHOD: Adam
+  LR: 1e-4
+  WD: 0.
+
+
+OPTIM_CASST:
+  LOSS: l1+l2+ssim
+  DEVICE:  cuda
+  METHOD: Adam
+  BETA: 0.9
+  LR: 1e-4
+  MT: 1.0
+  
+
