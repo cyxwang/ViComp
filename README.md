@@ -23,7 +23,9 @@ The image named "textImg.png" is downloaded from [this website](http://www.lybcz
 
    2. Download the videos and extract the frames to "DATANAME", generate the shot index file named "DATANAME_shot_index.txt". Put these files into "data".
      
-   3. Download the [pre-trained compensation model](https://github.com/BingyaoHuang/CompenNeSt-plusplus) to "pretrain".   
+   3. Download the [pre-trained model of CompenNeSt](https://github.com/BingyaoHuang/CompenNeSt-plusplus) to "pretrain".  
+   
+   4. Download the [pre-trained model of FlowFormer](https://github.com/drinkingcoder/FlowFormer-Official) to "pretrain".
 
    4. cd to "src/python", edit data path and hyper-parameters in "online.yaml", then run testing.sh to start the system.
       
