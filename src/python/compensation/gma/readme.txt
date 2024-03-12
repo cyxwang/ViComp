@@ -1,0 +1,1 @@
+Collected from https://github.com/zacjiang/GMA
