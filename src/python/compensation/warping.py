@@ -84,6 +84,9 @@ def calWarpingFieldFromTextureImage(flow_name,cfg,im_cam,im_prj,im_surf):
             flow_model = nn.DataParallel(flow_model).to(device)
             flow_model.load_state_dict(torch.load(cfg.latentcostformer.pretrained_model))
             print(f"====Loaded FLOWFORMER checkpoint at {cfg.latentcostformer.pretrained_model}")
+            im_prj_torch = im_prj_torch*255
+            im_cam_torch = im_cam_torch*255
+            
 
         flow_model.eval()
         outflow = torch.zeros((1,2,h,w))
