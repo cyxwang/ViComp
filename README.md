@@ -25,9 +25,11 @@ The image named "textImg.png" is downloaded from [this website](http://www.lybcz
      
    3. Download the [pre-trained model of CompenNeSt](https://github.com/BingyaoHuang/CompenNeSt-plusplus) to "pretrain".  
    
-   4. Download the [pre-trained model of FlowFormer](https://github.com/drinkingcoder/FlowFormer-Official) to "pretrain".
+   4. Download the code of [FlowFormer](https://github.com/drinkingcoder/FlowFormer-Official) to "src/python/compensation".
+   
+   5. Download the [pre-trained model of FlowFormer](https://github.com/drinkingcoder/FlowFormer-Official) to "pretrain".
 
-   4. cd to "src/python", edit data path and hyper-parameters in "online.yaml", then run testing.sh to start the system.
+   6. cd to "src/python", edit data path and hyper-parameters in "online.yaml", then run testing.sh to start the system.
       
      cd src/python
      
